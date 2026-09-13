@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    color: #222;
+}
+
+a {
+    color: #176b3a;
+}
+
+.topbar {
+    background-color: #ffffff;
+    border-bottom: 2px solid #b7d7bd;
+    padding: 14px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #176b3a;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 7px 10px;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: #e8f5e9;
+}
+
+.page-container {
+    width: 92%;
+    max-width: 1180px;
+    margin: 25px auto;
+    min-height: 70vh;
+}
+
+.footer {
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #cbdacb;
+    padding: 18px;
+    margin-top: 30px;
+    color: #555;
+}
+
+.hero {
+    background: #ffffff;
+    border: 1px solid #cbdacb;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.hero h1 {
+    margin-top: 0;
+    color: #176b3a;
+}
+
+.filter-box {
+    background: #ffffff;
+    border: 1px solid #cbdacb;
+    padding: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-box input[type="text"], .filter-box select {
+    min-width: 180px;
+    padding: 8px;
+}
+
+.medicine-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+}
+
+.medicine-card {
+    background: #ffffff;
+    border: 1px solid #cbdacb;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.medicine-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f8f8f8;
+}
+
+.medicine-card h3 {
+    color: #176b3a;
+    margin-bottom: 8px;
+}
+
+.description {
+    min-height: 40px;
+    color: #555;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #236628;
+}
+
+.btn-success {
+    background-color: #2e7d32;
+}
+
+.btn-danger {
+    background-color: #b3261e;
+}
+
+.btn-danger:hover {
+    background-color: #8e1d18;
+}
+
+.btn-light {
+    background-color: #6c757d;
+}
+
+.btn-small {
+    padding: 5px 8px;
+    font-size: 12px;
+}
+
+.stock-out {
+    color: #b3261e;
+    font-weight: bold;
+}
+
+.form-wrapper {
+    width: 680px;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+.wide-form {
+    width: 760px;
+}
+
+fieldset {
+    border: 2px solid gray;
+    padding: 20px;
+    background-color: white;
+}
+
+legend {
+    font-size: 22px;
+    font-weight: bold;
+    color: #176b3a;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.form-table td {
+    padding: 7px;
+    vertical-align: top;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], select, textarea {
+    width: 230px;
+    max-width: 100%;
+    padding: 7px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background: white;
+}
+
+textarea {
+    min-height: 70px;
+    resize: vertical;
+}
+
+.errorText, .form-error {
+    color: #b3261e;
+    font-size: 14px;
+}
+
+.form-success {
+    color: #176b3a;
+}
+
+.alert {
+    padding: 10px 14px;
+    margin: 10px 0 18px;
+    border-radius: 4px;
+}
+
+.alert-success {
+    background: #dff3e3;
+    border: 1px solid #91c99a;
+    color: #195b2c;
+}
+
+.alert-error {
+    background: #fde6e4;
+    border: 1px solid #e2aaa6;
+    color: #8a1d17;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #cbdacb;
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.stat-card span {
+    display: block;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.stat-card strong {
+    font-size: 28px;
+    color: #176b3a;
+}
+
+.action-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.data-table th, .data-table td {
+    border: 1px solid #aaa;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.data-table th {
+    background: #dcefe0;
+}
+
+.table-wrap {
+    overflow-x: auto;
+}
+
+.inline-form {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.inline-form input, .inline-form select {
+    width: auto;
+}
+
+.qty-input {
+    width: 65px !important;
+}
+
+.table-image {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.profile-image {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #b7d7bd;
+}
+
+.delete-box {
+    background: white;
+    border: 1px solid #e2aaa6;
+    padding: 15px;
+    margin-top: 18px;
+}
+
+.delete-box input[type="password"] {
+    margin-right: 8px;
+}
+
+.total-box {
+    background: white;
+    padding: 15px;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.panel, .invoice-box, .empty-box {
+    background: white;
+    border: 1px solid #cbdacb;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.radio-line {
+    display: block !important;
+    padding: 5px 0;
+}
+
+.invoice-meta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px 20px;
+}
+
+.invoice-total {
+    text-align: right;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 7px;
+    border-radius: 4px;
+    background: #eeeeee;
+}
+
+.status-pending { background: #fff3cd; }
+.status-accepted, .status-processing, .status-shipped { background: #d8ecff; }
+.status-delivered { background: #dff3e3; }
+.status-rejected, .status-cancelled { background: #fde6e4; }
+
+@media (max-width: 760px) {
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .checkout-grid, .invoice-meta {
+        grid-template-columns: 1fr;
+    }
+    .form-table td {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media print {
+    .topbar, .footer, .alert, .section-header .btn {
+        display: none !important;
+    }
+    body { background: white; }
+    .page-container { width: 100%; margin: 0; }
+}
